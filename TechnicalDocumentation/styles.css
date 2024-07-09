@@ -1,0 +1,119 @@
+:root{
+    --primaryColor: #EE4B2B;
+    --secondryColor: whitesmoke;
+    --playgroundColor: #FDCCA4;
+    font-size: 16px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+body{
+    width: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  nav{
+    width: 350px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    /*background-color: #6A89A7;
+    */background-color: var(--primaryColor);
+    color: var(--secondryColor);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  nav>header{
+    text-wrap: wrap;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 20% 0 8% 0;
+    padding: 10px;
+  }
+  nav>div{
+    height: 65%;
+    overflow: auto;
+  }
+  nav>div a{
+    color: var(--secondryColor);
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    border-top: 2px solid grey;
+    padding: 20px;
+  }
+  nav a:hover{
+    text-decoration: underline;
+    color: white;
+  }
+  main{
+    width: 65%;
+    float: right;
+  }
+main .heading{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+main .bullets{
+    margin-left: 60px;
+}
+main .subBulltes{
+    margin-left: 60px;
+}
+.code{
+    width: 100%;
+    height: 30px;
+    background-color: var(--playgroundColor);
+    color: black;
+    text-align: center;
+} 
+@media only screen and (max-width: 767px){
+   :root{
+    font-size: 10px;
+   }
+    nav{
+        width: 100%;
+        height: 65%;
+        margin-top: -50px;
+        padding-bottom: 100px;
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+    main{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    :root{
+        font-size: 14px;
+       }
+        nav{
+            width: 100%;
+            height: 75%;
+            margin-top: -100px;
+            padding-bottom: 200px;
+            display: block;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+        main{
+            position: absolute;
+            top: 60%;
+            left: 10%;
+        }
+}
