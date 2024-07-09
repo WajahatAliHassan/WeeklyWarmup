@@ -1,0 +1,68 @@
+@mixin btnTransition{
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+
+body{
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+}
+span{
+    color: $secondary-color;
+}
+.call_to_action{
+    background-color: $secondary-color;
+    @include btnTransition;
+&:hover{
+        background-color: $tertiary-color;
+        scale: 0.9;
+}
+}
+
+.custom-shape-divider {
+    position: absolute;
+    top: 691px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 171px;
+    }
+    .shape-fill {
+        fill: $primary-color;
+    }
+}
+.larger-container{
+    width: 100%;
+    height: 100%;
+    background-color: $tertiary-color;
+    padding-bottom: 100px;
+}
+.paragraph{
+    font-size: 25px;
+    font-weight: 700;
+    .percent-span{
+        display: block;
+        font-size: 50px;
+    }
+}
+.heading{
+    color: $secondary-color;
+}
+.feedback-container{
+    background-color: $primary-color;
+    color: $tertiary-color;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
