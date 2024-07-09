@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(161, 161, 161);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
+#image{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 50px;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 3%;
+  }
+h1, main> p, figcaption{
+    text-align: center;
+  }
+main>p, figcaption{
+    text-decoration: underline;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+main>p{
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    font-variation-settings:
+      "wdth" 100;
+}
+img{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+ul>li{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    list-style: disc outside;
+}
+ul>li::first-letter{
+    font-weight: bold;
+    font-size: 30px;
+}
