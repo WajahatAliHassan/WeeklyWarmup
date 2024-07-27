@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessGame</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>GuessGame</h1>
+    <form id="guessForm">
+      <caption>
+        Enter the Number from 1 to 100
+      </caption>
+      <input
+        type="number"
+        placeholder="Enter your guess number"
+        id="num"
+        required
+      />
+      <input type="submit" value="Check Guess" />
+    </form>
+    <div>
+      <h4>Result:</h4>
+      <p id="result"></p>
+      <p id="counter"></p>
+      <button id="replayBtn">Replay Game</button>
+    </div>
+    <script src="index.js"></script>
+    <noscript>Browser not supported the javascript</noscript>
+  </body>
+</html>
