@@ -1,0 +1,9 @@
+{
+  "short_name": "TransformText",
+  "name": "TransformText",
+  
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
